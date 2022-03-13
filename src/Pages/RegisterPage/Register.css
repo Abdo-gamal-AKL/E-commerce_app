@@ -1,0 +1,93 @@
+.register__page {
+    padding: 80px 15px 150px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    background-position: top left;
+    animation: gradient 15s ease infinite;
+}
+
+.register__page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register__page .container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    line-height: 20px;
+}
+
+.register__page .container form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 15px;
+    width: 350px;
+    display: block;
+}
+
+.register__page .container input::placeholder {
+    color: #777;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.register__page .container input {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #444;
+    font-weight: 600;
+}
+
+.register__page .container .text {
+    text-align: center;
+    width: 100%;
+    padding: 0px 5px 20px;
+}
+
+.register__page .container .text a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    font-size: 12px;
+    transition: color 0.5s;
+}
+
+.register__page .container .text a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.register__page .container .register__button {
+    background-color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    align-self: flex-start;
+    margin: 0 0 10px;
+    border-radius: 0px;
+    margin-top: 15px;
+    padding: 8px 50px;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 350px) {
+    .register__page .container form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+.products__carousel .header h4 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.products__carousel {
+  padding: 80px 0 80px 0;
+}
+
+.products__carousel .product {
+  margin: 0 20px !important;
+}
+
+.products__carousel .product img {
+  margin: auto;
+}
+
+.products__carousel .slick-slider .slick-track {
+  margin-bottom: 60px !important;
+}
+
+.products__carousel .slick-arrow {
+  position: absolute !important;
+  bottom: -20px !important;
+  right: 0 !important;
+  display: block;
+  margin-left: 10px;
+  border: 2px solid #d10024;
+  background-color: #d10024;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 2px 7px;
+  z-index: 5;
+}
+
+.products__carousel .slick-prev {
+  right: 55px !important;
+}
+
+#root + button {
+  display: none !important;
+}

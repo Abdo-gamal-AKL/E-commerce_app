@@ -1,0 +1,38 @@
+footer {
+  background-color: #15161d;
+}
+
+.footer .col h2 {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-bottom: 15px;
+  margin: 0 !important;
+}
+
+.footer .container {
+  padding: 0 15px !important;
+}
+
+.footer .container ul {
+  list-style-type: none;
+}
+
+.footer .container ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer .container ul li a:hover {
+  color: #d10024;
+  transition: 0.3s;
+}
+
+.footer .container ul li {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}

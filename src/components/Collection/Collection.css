@@ -1,0 +1,61 @@
+.collection {
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 200px;
+  border: 2px solid #d1002300;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.collection::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -128px;
+  height: 105%;
+  width: 100%;
+  background-color: #d10024;
+  transform: skewX(-45deg);
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.collection .text-box {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 65%;
+}
+
+.collection .text-box h3 {
+  font-weight: bolder;
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+.collection a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.collection img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.collection p {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.collection p i {
+  margin: 0 5px;
+}
