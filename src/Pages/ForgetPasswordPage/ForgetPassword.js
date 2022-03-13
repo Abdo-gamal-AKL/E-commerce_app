@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@mui/material";
 import { toast } from "react-toastify";
 import { Auth } from "./../../Firebase";
+import { sendPasswordResetEmail } from "firebase/auth";
 
 import "./ForgetPassword.css";
 
@@ -21,6 +22,27 @@ const ForgetPassword = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (email) {
+            const unsub = sendPasswordResetEmail(Auth, email)
+                .then(() => {
+                    toast("check your email", {
+                        ...toastOptions,
+                        type: "success",
+                    });
+                })
+                .catch(() => {
+                    toast("Wrong Data!", {
+                        ...toastOptions,
+                        type: "error",
+                    });
+                });
+            return unsub;
+        } else {
+            toast("Please enter your email", {
+                ...toastOptions,
+                type: "warning",
+            });
+        }
     };
 
     return (
@@ -49,7 +71,9 @@ const ForgetPassword = () => {
                                 }}
                             />
                         </div>
-                        <Button variant="contained">Submit</Button>
+                        <Button type="submit" variant="contained">
+                            Submit
+                        </Button>
                     </form>
                 </div>
             </div>
