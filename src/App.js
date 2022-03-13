@@ -10,6 +10,7 @@ import Cart from "./Pages/CartPage/Cart";
 import Login from "./Pages/LoginPage/Login";
 import Register from "./Pages/RegisterPage/Register";
 import CheckOut from "./Pages/CheckOutPage/CheckOut";
+import ForgetPassword from "./Pages/ForgetPasswordPage/ForgetPassword";
 
 import { Route, Switch } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,6 +18,7 @@ import { Redirect } from "react-router-dom";
 import { Auth } from "./Firebase";
 import axios from "axios";
 import { setCurrentUser } from "./store/authSlice";
+import { toast } from "react-toastify";
 
 // Components
 import Footer from "./components/Footer/Footer";
@@ -25,8 +27,8 @@ import Header from "./components/Header/Header";
 // CSS
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
-import { toast } from "react-toastify";
-import ForgetPassword from "./Pages/ForgetPasswordPage/ForgetPassword";
+
+
 
 console.warn = () => {};
 
