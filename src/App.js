@@ -27,8 +27,7 @@ import Header from "./components/Header/Header";
 // CSS
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
-
-
+import Search from "./Pages/SearchPage/Search";
 
 console.warn = () => {};
 
@@ -38,6 +37,7 @@ const App = () => {
     );
     const [error, setError] = useState(false);
     const dispatch = useDispatch();
+    const { searchResult } = useSelector((state) => state.searchReducer);
 
     useEffect(() => {
         Auth.onAuthStateChanged((user) => {
@@ -467,6 +467,18 @@ const App = () => {
                                 position: "top-center",
                             });
                             return <Redirect to="/" />;
+                        }
+                    }}
+                />
+                {/* Search Page */}
+                <Route
+                    path="/search"
+                    exact
+                    render={() => {
+                        if (!searchResult) {
+                            return <Redirect to="/" />;
+                        } else {
+                            return <Search />;
                         }
                     }}
                 />

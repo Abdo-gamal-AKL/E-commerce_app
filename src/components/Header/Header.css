@@ -1,0 +1,225 @@
+/* Header Top */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --red-color: #d10024;
+    --grayish-color: rgb(141, 153, 174);
+}
+
+.header-top {
+    background-color: #1e1f29;
+    padding: 10px 5px;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 0.3px;
+}
+
+.header-top ul li i {
+    color: #d10024;
+    margin-right: 10px;
+}
+
+.header-top ul li p {
+    margin: 0;
+}
+
+.header-top ul li:hover {
+    color: #d10024 !important;
+}
+
+@media (max-width: 700px) {
+    .header-top .container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .header-top .container ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px 0;
+    }
+}
+/* End Header Top  */
+
+/* Start Header Middle */
+
+.header-middle {
+    background-color: #15161d;
+    padding: 15px 5px;
+    border-bottom: 3px solid #d10024;
+}
+
+.header-middle .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-middle .container .cart-wishlist {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-middle .container .cart-wishlist div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    color: white;
+    width: 85px;
+    cursor: pointer;
+}
+
+.header-middle .container .cart-wishlist div:not(:last-child) {
+    margin-right: 15px;
+}
+
+.header-middle .container .cart-wishlist div span {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.header-middle .container .cart-wishlist div .count {
+    position: absolute;
+    right: 10px;
+    top: -14px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(209, 0, 36);
+    width: 20px;
+    height: 20px;
+    font-weight: 600;
+}
+
+.header-middle .container .cart-wishlist div i {
+    font-size: 18px;
+}
+
+.header-middle .container .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.header-middle .container .search-box button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    height: 40px;
+    width: 95px;
+    border: none;
+    background-color: rgb(209, 0, 36);
+}
+
+.header-middle .container .search-box button a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.header-middle .container .search-box input {
+    height: 40px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #15161d;
+    caret-color: #15161d;
+    font-weight: 400;
+}
+
+.css-ja5taz-MuiTooltip-tooltip {
+    background-color: rgba(97, 97, 97, 1) !important;
+}
+
+.header-middle .container .cart-wishlist div.dropdown {
+    margin: 0 !important;
+}
+
+.header-middle .logo {
+    cursor: pointer;
+}
+
+.header-middle .bar {
+    display: none !important;
+    margin-right: 0 !important;
+}
+
+.header-middle a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .header-middle .bar {
+        display: flex !important;
+        width: fit-content !important;
+    }
+
+    .header-middle .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header-middle .container .logo,
+    .header-middle .container .search-box,
+    .header-middle .container .cart-wishlist {
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .header-middle .container .logo img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 271px) {
+    .header-middle .container .cart-wishlist {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-middle .container .cart-wishlist div {
+        margin: 5px 0 !important;
+    }
+}
+
+/* End Header Middle */

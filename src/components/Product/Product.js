@@ -5,12 +5,10 @@ import ReactStars from "react-rating-stars-component";
 import "./Product.css";
 import { NavLink } from "react-router-dom";
 import { addProductToCart } from "../../store/cartSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const Product = ({ data }) => {
     const [isFavorite, setIsFavorite] = useState(false);
-
-    const { cartReducer } = useSelector((state) => state);
 
     const dispatch = useDispatch();
 
@@ -29,7 +27,9 @@ const Product = ({ data }) => {
             </div>
             <div className="content">
                 <p className="category">Category Goes Here</p>
-                <h6 className="title">{data.title}</h6>
+                <h6 className="title">
+                    <NavLink to={`/products/${data.id}`}>{data.title}</NavLink>
+                </h6>
                 <div className="price">
                     <h4 className="main-price">{`$${data.price}`}</h4>
                     <del>

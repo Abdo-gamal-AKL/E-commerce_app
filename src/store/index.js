@@ -5,6 +5,7 @@ import DaynamicPageReducer from "./PageDataSlice";
 import singleProductReducer from "./singleProductSlice";
 import authReducer from "./authSlice";
 import cartReducer from "./cartSlice";
+import searchReducer from "./searchSlice";
 
 export const store = configureStore({
     reducer: {
@@ -14,5 +15,6 @@ export const store = configureStore({
         singleProductReducer,
         authReducer,
         cartReducer,
+        searchReducer,
     },
 });

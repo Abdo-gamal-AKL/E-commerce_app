@@ -1,0 +1,23 @@
+.search__page {
+    padding-bottom: 60px;
+}
+
+.search__page .products {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.search__page h2 {
+    font-size: 25px;
+    border-bottom: 2px solid #d10024;
+    padding: 30px 0;
+}
+
+.search__page h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 0;
+}

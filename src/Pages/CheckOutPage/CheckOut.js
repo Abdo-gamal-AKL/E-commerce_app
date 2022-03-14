@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 import { handleCompleteBuying } from "../../store/cartSlice";
 import "./CheckOut.css";
 
@@ -99,7 +100,10 @@ const CheckOut = () => {
                         className="accept__button"
                         onClick={() => {
                             dispatch(handleCompleteBuying());
-                            alert("Done");
+                            toast("Shopping completed", {
+                                theme: "colored",
+                                type: "success",
+                            });
                         }}
                     >
                         Accept & Complete

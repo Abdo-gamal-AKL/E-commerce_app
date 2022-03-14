@@ -67,13 +67,17 @@
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 0px;
-  font-size: 14px;
-  text-transform: capitalize;
   height: 40px;
   width: 95px;
   border: none;
-  color: white;
   background-color: rgb(209, 0, 36);
+}
+
+.header-middle .container .search-box button a {
+  color: white;
+  text-transform: capitalize;
+  font-size: 14px;
+  
 }
 
 .header-middle .container .search-box input {
