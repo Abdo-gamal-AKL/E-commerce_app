@@ -40,7 +40,7 @@ const DropDown = () => {
                         <li data-bs-toggle="offcanvas" data-bs-target="#page">
                             <a>Pages</a>
                         </li>
-                        <li data-bs-target="#page" data-bs-toggle="offcanvas">
+                        <li data-bs-dismiss="offcanvas">
                             <NavLink to="/about_us">About us</NavLink>
                         </li>
                     </ul>
