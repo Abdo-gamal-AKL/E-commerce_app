@@ -1,92 +1,93 @@
 .background {
-  background-image: url(https://thirsty-elion-165cab.netlify.app/images/1.jpg);
-  width: 100%;
-  background-position: center;
-  height: 74vh;
-  position: relative;
-  background-position: bottom center;
-  animation: handleBackground 2s ease-in-out;
+    background-image: url(https://thirsty-elion-165cab.netlify.app/images/1.jpg);
+    width: 100%;
+    background-position: center;
+    height: 74vh;
+    position: relative;
+    background-position: bottom center;
+    animation: handleBackground 2s ease-in-out;
 }
 
 .background::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0.6;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
 }
 
 .background .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
 }
 
 .background .container img {
-  width: 125px;
-  height: 125px;
-  object-fit: cover;
-  background: white;
-  border: 5px solid white;
-  border-radius: 50%;
-  animation: handleOpacity 1.6s ease-in-out;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    background: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    animation: handleOpacity 1.6s ease-in-out;
 }
 
 .background .container h2 {
-  padding-top: 30px;
-  font-size: 35px;
-  font-weight: 600;
-  color: white;
-  animation: handleOpacity 2s ease-in-out;
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    animation: handleOpacity 2s ease-in-out;
+    text-align: center;
 }
 
 .background .container p {
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
-  animation: handlePara 2s ease-in-out;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    animation: handlePara 2s ease-in-out;
 }
 
 @keyframes handleBackground {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: bottom center;
-  }
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: bottom center;
+    }
 }
 
 @keyframes handleOpacity {
-  0% {
-    opacity: 0;
-  }
-  1% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes handlePara {
-  0% {
-    position: relative;
-    bottom: -15px;
-    opacity: 0;
-  }
-  100% {
-    position: relative;
-    bottom: 0;
-    opacity: 1;
-  }
+    0% {
+        position: relative;
+        bottom: -15px;
+        opacity: 0;
+    }
+    100% {
+        position: relative;
+        bottom: 0;
+        opacity: 1;
+    }
 }
